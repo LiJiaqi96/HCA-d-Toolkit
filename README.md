@@ -3,11 +3,11 @@ An R script that helps uniform gene symbols of different single-cell RNA sequenc
 
 欢迎使用Gene Symbol Uniform R toolkit!
 
-#使用方法： 
+# 使用方法
 
 0.确保dependency的R包可用，括号内为参考版本：Seurat(3.1.4), stringr(1.4.0), dplyr(0.8.5)  
 
-1.解压后进入该文件夹: cd path_to_this_dir，请务必保证文件夹内文件及其名称没有改变  
+1.解压后进入该文件夹: cd path_to_this_dir，先解压"GeneSymbolRef_SelectAll_upd0731.csv.zip"（github文件上传大小限制），文件夹内其他文件及其名称保持不变  
 
 2.输入下面的命令并执行：
 
@@ -41,8 +41,5 @@ Gene Symbol Uniform R toolkit实现统一基因表达矩阵中基因名称的统
 
 
 
-#致谢：
+# 致谢
 感谢Qiuchen Meng和Ziheng Zou在total gene list确定过程中的工作，以及后续的测试工作。感谢Yixin Chen和Minsheng Hao在优化工具中的建议和工作。感谢Sijie Chen全过程的帮助。
-
-
-
