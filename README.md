@@ -7,7 +7,7 @@ An R script that helps uniform gene symbols of different single-cell RNA sequenc
 
 0.确保dependency的R包可用，括号内为参考版本：Seurat(3.1.4), stringr(1.4.0), dplyr(0.8.5)  
 
-1.解压后进入该文件夹: cd path_to_this_dir，先解压"GeneSymbolRef_SelectAll_upd0731.csv.zip"（github文件上传大小限制），文件夹内其他文件及其名称保持不变  
+1.解压后进入该文件夹: cd path_to_this_dir，先解压"GeneSymbolRef_SelectAll_upd0731.csv.zip"（zip是因为github文件上传大小限制），文件夹内其他文件及其名称保持不变  
 
 2.输入下面的命令并执行：
 
@@ -34,11 +34,9 @@ ModificationReport.csv，gene symbol修改记录，gene list与输入的Seurat O
 
 将SeuratObj使用的slot从“counts”调整为“data”，即使用normalized data作为处理对象，方便最终的上传。
 
-#2020.08.02， v0.1 released  
+# 2020.08.02， v0.1 released  
 
 Gene Symbol Uniform R toolkit实现统一基因表达矩阵中基因名称的统一，基于R实现，更好地支持SeuratObj。同时使用命令行完成整套工作，方便简洁。
-
-
 
 
 # 致谢
