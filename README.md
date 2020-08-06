@@ -5,7 +5,8 @@ An R script that helps uniform gene symbols of different single-cell RNA sequenc
 
 # 使用方法
 
-0.确保dependency的R包可用，括号内为参考版本：Seurat(3.1.4), stringr(1.4.0), dplyr(0.8.5)  
+0.确保dependency的R包可用，括号内为参考版本：Seurat(3.1.4), stringr(1.4.0), dplyr(0.8.5)    
+dplyr版本需要低于1.0.1（不含），否则可能会有问题
 
 1.解压后进入该文件夹: cd path_to_this_dir，先解压"GeneSymbolRef_SelectAll_upd0731.csv.zip"（zip是因为github文件上传大小限制），文件夹内其他文件及其名称保持不变  
 
@@ -26,15 +27,15 @@ UniformedExpression.csv，统一gene symbol list的表达矩阵，目前是43878
 ModificationReport.csv，gene symbol修改记录，gene list与输入的Seurat Object一致  
 
 
-# 2020.08.05，v0.3 released
+**2020.08.05，v0.3 released**  
 
 加入辅助函数"as_matrix"用于将大规模（一般是细胞数大于4w）的系数矩阵转换为matrix进而转换为data.frame。当前版本中，如果细胞数大于3w则使用as_matrix，否则使用R内置的as.matrix函数。
 
-# 2020.08.04， v0.2 released  
+**2020.08.04， v0.2 released**  
 
 将SeuratObj使用的slot从“counts”调整为“data”，即使用normalized data作为处理对象，方便最终的上传。
 
-# 2020.08.02， v0.1 released  
+**2020.08.02， v0.1 released**  
 
 Gene Symbol Uniform R toolkit实现统一基因表达矩阵中基因名称的统一，基于R实现，更好地支持SeuratObj。同时使用命令行完成整套工作，方便简洁。
 
