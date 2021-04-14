@@ -4,7 +4,7 @@
 输入参考数据集seuratobj路径、查询数据集seuratobj路径、output路径，完成细胞类型注释，并输出csv文件记录注释结果  
 
 **2.依赖及安装方法**  
-注意：最好安装R>=4.0或创建新的anaconda环境，否则SingleR的安装可能会失败。
+注意：最好安装R>=4.0或创建新的anaconda环境，否则SingleR的安装可能会失败。  
 Seurat >= 3.X.X  
 BiocManager >= 3.12  
 SingleR >= 1.4.1  
